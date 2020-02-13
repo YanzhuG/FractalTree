@@ -9,9 +9,8 @@ public void setup()
 } 
 public void draw() 
 {   
-	background(255);   
-	stroke((float)(300*branchAngle),220,(float)(100*branchAngle));  
-System.out.println((float)(1000*branchAngle)+","+220+","+(float)(100*branchAngle)); 
+	background(0);   
+	stroke((float)(500*branchAngle),220,(float)(250*branchAngle));   
 	line(320,480,320,380);   
 	drawBranches(320,380,100,3*Math.PI/2);//will add later 
 } 
@@ -35,10 +34,10 @@ if(branchLength>=smallestBranch){
 public void keyPressed(){
  if(key=='m'){
  redraw();
- branchAngle+=.1;
+ branchAngle+=.07;
  }
  if(key=='l'){
    redraw();
- branchAngle-=.1;
+ branchAngle-=.07;
  }
 }
